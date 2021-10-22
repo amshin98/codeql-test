@@ -18,5 +18,3 @@ def rainfall(measurements):
         return 0
     
     return rain_total / days
-
-print(rainfall([1.0, 99999]))
