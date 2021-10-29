@@ -1,0 +1,6 @@
+name: codeql/test-queries
+version: 0.0.1
+libraryPathDependencies: codeql/python-all
+suites: codeql-suites
+extractor: python
+
