@@ -35,6 +35,10 @@ class RainfallTests(unittest.TestCase):
         measurements = [-1.0, -1.0, -3.0, 99999.0]
         self.assertEqual(rainfall(measurements), 0.0)
 
+    def test_one_day(self):
+        measurements = [3.0, 99999.0]
+        self.assertEqual(rainfall(measurements), 3.0)
+
     def test_long(self):
         measurements = [4, 7, -1.4, 19, -1, 20, 0, 0, 0, -41.1, 13, 14, 11, 8,
                 2, 18, 16, -4., 6, -123, -15, -0.01, 0, 12, 5, 0, 0, 0, 0, 10,
